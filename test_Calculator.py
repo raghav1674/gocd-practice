@@ -38,7 +38,7 @@ class TestCalculator(unittest.TestCase):
         self.assertRaises(ValueError, Calculator.divide, 2, 0)
 
     def test_mulitply(self):
-        self.assertEqual(Calculator.mulitply(self.a, self.b), -2)
+        self.assertEqual(Calculator.mulitply(self.a, self.b), 2)
 
     # mock
 
