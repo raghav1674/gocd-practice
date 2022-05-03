@@ -13,7 +13,9 @@ pipelines:
             install_deps:
               tasks:
               - exec:
-                  command: /bin/bash -c ls -la
+                  command: /bin/sh 
+                  arguments:
+                  - ls -la
             #   tasks:
             #     - exec:
             #         run_if: passed
