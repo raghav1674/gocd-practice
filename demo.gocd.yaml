@@ -1,6 +1,7 @@
 format_version: 2
 pipelines:
   pipeline_code_demo:
+    group: pipeline-dev
     materials:
       backend:
         git: https://github.com/raghav1674/gocd-practice.git
