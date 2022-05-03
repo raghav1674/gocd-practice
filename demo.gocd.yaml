@@ -14,10 +14,14 @@ pipelines:
               tasks:
                 - exec:
                     run_if: passed
-                    command: pip3 install -r requirements.txt
+                    command: /bin/bash
+                    arguments:
+                    - -c pip3 install -r requirements.txt
             test_app:
               tasks:
                 - exec:
                     run_if: passed
-                    command: python3 test_Calculator.py
+                    command: /bin/bash 
+                    arguments:
+                    - -c python3 test_Calculator.py
    
