@@ -14,7 +14,7 @@ pipelines:
               tasks:
                 - exec:
                     run_if: passed
-                    command: pip3 install requests
+                    command: whoami
             test_app:
               tasks:
                 - exec:
